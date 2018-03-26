@@ -1,0 +1,12 @@
+Please Follow the Below Steps to Update Countdown:
+--------- 
+
+=> Open the JS Folder
+=> Open the "global.js" file
+=> Go to line no:5 and update the data asper the given format.
+
+
+Update your Email ID to receive the subsicrbers:
+---------
+=> Open the "Subscribe.php" file
+=> Go to Line no:6 and update your email id
