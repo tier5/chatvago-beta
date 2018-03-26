@@ -94,6 +94,375 @@ Note: Please use our back link in your site (webthemez.com)
   </div>
 	<h2 class="text-center">More Features coming soon after the BETA...</h2>
 </section>
+	
+	
+	<style>
+	.timeline {
+    position: relative;
+    padding:4px 0 0 0;
+    margin-top:22px;
+    list-style: none;
+}
+
+.timeline>li:nth-child(even) {
+    position: relative;
+    margin-bottom: 50px;
+    height: 180px;
+    right:-100px;
+}
+
+.timeline>li:nth-child(odd) {
+    position: relative;
+    margin-bottom: 50px;
+    height: 180px;
+    left:-100px;
+}
+
+.timeline>li:before,
+.timeline>li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline>li:after {
+    clear: both;
+    min-height: 170px;
+}
+
+.timeline > li .timeline-panel {
+  position: relative;
+  float: left;
+  width: 41%;
+  padding: 0 20px 20px 30px;
+  text-align: right;
+}
+
+.timeline>li .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-image {
+    z-index: 100;
+    position: absolute;
+    left: 50%;
+    border: 7px solid #3b5998;
+    border-radius: 100%;
+    background-color: #3b5998;
+    box-shadow: 0 0 5px #4582ec;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+}
+
+.timeline>li .timeline-image h4 {
+    margin-top: 12px;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+    padding: 0 30px 20px 20px;
+    text-align: left;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline .timeline-heading h4 {
+  margin-top:22px;
+    margin-bottom: 4px;
+    padding:0;
+    color: #b3b3b3;
+}
+
+.timeline .timeline-heading h4.subheading {
+  margin:0;
+  padding:0;
+    text-transform: none;
+    font-size:18px;
+    color:#333333;
+}
+
+.timeline .timeline-body>p,
+.timeline .timeline-body>ul {
+    margin-bottom: 0;
+    color:#808080;
+}
+/*Style for even div.line*/
+.timeline>li:nth-child(odd) .line:before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 690px;
+    width: 4px;
+    height:340px;
+    background-color: #3b5998;
+    -ms-transform: rotate(-44deg); /* IE 9 */
+    -webkit-transform: rotate(-44deg); /* Safari */
+    transform: rotate(-44deg);
+    box-shadow: 0 0 5px #4582ec;
+}
+/*Style for odd div.line*/
+.timeline>li:nth-child(even) .line:before  {
+    content: "";
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 450px;
+    width: 4px;
+    height:340px;
+    background-color: #3b5998;
+    -ms-transform: rotate(44deg); /* IE 9 */
+    -webkit-transform: rotate(44deg); /* Safari */
+    transform: rotate(44deg);
+    box-shadow: 0 0 5px #4582ec;
+}
+/* Medium Devices, .visible-md-* */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .timeline > li:nth-child(even) {
+    margin-bottom: 0px;
+    min-height: 0px;
+    right: 0px;
+  }
+  .timeline > li:nth-child(odd) {
+    margin-bottom: 0px;
+    min-height: 0px;
+    left: 0px;
+  }
+  .timeline>li:nth-child(even) .timeline-image {
+    left: 0;
+    margin-left: 0px;
+  }
+  .timeline>li:nth-child(odd) .timeline-image {
+    left: 690px;
+    margin-left: 0px;
+  }
+  .timeline > li:nth-child(even) .timeline-panel {
+    width: 76%;
+    padding: 0 0 20px 0px;
+    text-align: left;
+  }
+  .timeline > li:nth-child(odd) .timeline-panel {
+    width: 70%;
+    padding: 0 0 20px 0px;
+    text-align: right;
+  }
+  .timeline > li .line {
+    display: none;
+  }
+}
+/* Small Devices, Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .timeline > li:nth-child(even) {
+    margin-bottom: 0px;
+    min-height: 0px;
+    right: 0px;
+  }
+  .timeline > li:nth-child(odd) {
+    margin-bottom: 0px;
+    min-height: 0px;
+    left: 0px;
+  }
+  .timeline>li:nth-child(even) .timeline-image {
+    left: 0;
+    margin-left: 0px;
+  }
+  .timeline>li:nth-child(odd) .timeline-image {
+    left: 520px;
+    margin-left: 0px;
+  }
+  .timeline > li:nth-child(even) .timeline-panel {
+    width: 70%;
+    padding: 0 0 20px 0px;
+    text-align: left;
+  }
+  .timeline > li:nth-child(odd) .timeline-panel {
+    width: 70%;
+    padding: 0 0 20px 0px;
+    text-align: right;
+  }
+  .timeline > li .line {
+    display: none;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 767px) {
+  .timeline > li:nth-child(even) {
+    margin-bottom: 0px;
+    min-height: 0px;
+    right: 0px;
+  }
+  .timeline > li:nth-child(odd) {
+    margin-bottom: 0px;
+    min-height: 0px;
+    left: 0px;
+  }
+  .timeline>li .timeline-image {
+    position: static;
+    width: 150px;
+    height: 150px;
+    margin-bottom:0px;
+  }
+  .timeline>li:nth-child(even) .timeline-image {
+    left: 0;
+    margin-left: 0;
+  }
+  .timeline>li:nth-child(odd) .timeline-image {
+    float:right;
+    left: 0px;
+    margin-left:0;
+  }
+  .timeline > li:nth-child(even) .timeline-panel {
+    width: 100%;
+    padding: 0 0 20px 14px;
+  }
+  .timeline > li:nth-child(odd) .timeline-panel {
+    width: 100%;
+    padding: 0 14px 20px 0px;
+  }
+  .timeline > li .line {
+    display: none;
+  }
+}
+	</style>
+	
+	<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h3 style="padding-top:20px" class="text-center">#ChatVago Concept and Development Timeline</h3>
+      <p>
+        Tier5 has been developing software for over 5 years as a company and over 100 years collectively. #ChatVago is a new type of software envisioned by Jon Vaughn (CEO of Tier5) and inspired by many chatbot builders. Below you will find the timeline of concept, planning, funding, development, and deployment of #ChatVago Beta! Time Line written in the first person narrative of Jon Vaughn (CEO of Tier5).
+      </p>
+      <ul class="timeline">
+        <li>
+          <div class="timeline-image">
+            <img class="img-circle img-responsive" src="/250/250/cats/1" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>The problem arises!</h4>
+              <h4 class="subheading">Jan 2018</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                The begining of the year I first started realizing this problem. It came to me two fold. On one side I had many clients that had paid me to build chatbots for them. I built some bots on Manychat and others on Chatfuel, others completly custom solutions. My clients would email me wanting to know how the bot was preforming, how many subscribers they had, or asking me if I could send out a broadcast to all of their users. The problem is I didn't want to give them access to manychat or chatfuel. I noticed many people in chatbot groups I'm in expressing the same problems! I looked for a solution, but there was none to be found. 
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-image">
+            <img class="img-circle img-responsive" src="/250/250/cats/2" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Brain Storming a Solution</h4>
+              <h4 class="subheading">Feb 2018</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                As time passed and I kept having this same issue and I began to see more and more posts in other chat bot groups about this same issue I really began to brain storm a solution to this problem. I kept looking for a solution in the market and kept coming up empty handed. I started looking through facebook apis, chatbot apis, 3rd party softwares, anything and everything that could help me find a solution. Still empty handed I decided it was time to engineer my own solution. So I took everything I've learned and put together a plan. 
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+        <li>
+          <div class="timeline-image">
+            <img class="img-circle img-responsive" src="/250/250/cats/3" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>The ProtoType and Funding</h4>
+              <h4 class="subheading">March 2018</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                It took me a few days but I worked out a solution in my head. I took that solution out of my head, put it on paper, and began to plan out the time and cost to bring this solution to life. I pitched the solution to members of my private group, a few of my clients, and some of my good friends looking for funding (didn't want to pay out of my pocket). Most were skeptical that my solution would actually work. So I spent a few days and me and a few of my engineers came up with an actual working proto-type of the solution. Showed the working proto-type to the same group of people and with in a few hours had the full funding I needed to build the Beta Version of #ChatVago 
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-image">
+            <img class="img-circle img-responsive" src="/250/250/cats/4" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Beta Development</h4>
+              <h4 class="subheading">March 2018</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                I belive in #ChatVago. I need #ChatVago, and I already know so many of my students need it. So many people have told me they need #ChatVago. I didn't wait for the funding to be in. Before even collecting funding I had already assemblyed a team of 4 engieers at Tier5 and had them start planning and building the Beta Version of #ChatVago. We currently have a team of 5 (out of 37) Tier5 Software Engineers working on the beta version of #ChatVago
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+        <li>
+          <div class="timeline-image">
+            <img class="img-circle img-responsive" src="/250/250/cats/5" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Beta Release</h4>
+              <h4 class="subheading">April 2018</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                I can't wait to use #ChatVago. My students can't wait to use #ChatVago. I've stacked up a team of Tier5 engieers to get a stable beta version of #ChatVago out as soon as possible. We anticipate that by mid or end of April for limited users. The full release of #ChatVago in a full scalable production ready state is anticipated no later than July 1st 2018. 
+              </p>
+            </div>
+          </div>
+        </li>
+		  
+      </ul>
+    </div>
+  </div>
+</div>
+<section class="subscribe spacing">
+<div class="container">
+
+<div id="subscribe">  
+<h3>Subscribe To Get Notified on Launch or get a great offer on Life Time Access!</h3>
+	<div class="mcwidget-embed" data-widget-id="1733308"></div>
+
+	
+</div>
+ 
+</div>
+</section>	
+	
 <span class="tempBy">Powered by <a href="https://tier5.us" alt="tier5">Tier5</a></span>
 
 <!--Scripts-->
